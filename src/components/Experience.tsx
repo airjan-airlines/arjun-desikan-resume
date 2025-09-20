@@ -5,7 +5,7 @@ const Experience = () => {
     {
       id: 1,
       role: "Student Researcher",
-      company: "Harvard OpenBio Laboratory",
+      company: "Harvard OpenBIO Laboratory's Student Research Institute",
       period: "Summer 2025",
       location: "Cambridge, MA",
       type: "Research",

@@ -18,8 +18,7 @@ const Projects = () => {
       techStack: ["Electron", "Python", "Flask", "SQLite", "DQNs", "HDBScan"],
       status: "Beta Release September 2025",
       featured: true,
-      demoUrl: "#",
-      githubUrl: "#"
+      demoUrl: "https://forge-qb.com"
     },
     {
       id: 2,
@@ -35,8 +34,7 @@ const Projects = () => {
       techStack: ["React", "Python", "FastAPI", "PostgreSQL", "Supabase", "Sci-BERT", "pgvector"],
       status: "MVP Release September 2025",
       featured: true,
-      demoUrl: "#",
-      githubUrl: "#"
+      demoUrl: "coming-soon"
     },
     {
       id: 3,
@@ -52,8 +50,7 @@ const Projects = () => {
       techStack: ["R", "RShiny", "GLM", "Statistical Analysis"],
       status: "Competition Winner",
       featured: false,
-      demoUrl: "https://arjun-desikan.shinyapps.io/shiny_predictor/",
-      githubUrl: "#"
+      demoUrl: "https://arjun-desikan.shinyapps.io/shiny_predictor/"
     }
   ];
 
@@ -145,22 +142,15 @@ const Projects = () => {
                 <Button 
                   size="sm" 
                   variant="outline" 
-                  className="flex-1"
-                  onClick={() => project.demoUrl !== "#" && window.open(project.demoUrl, '_blank')}
+                  className="w-full"
+                  onClick={() => {
+                    if (project.demoUrl === "coming-soon") return;
+                    if (project.demoUrl !== "#") window.open(project.demoUrl, '_blank');
+                  }}
                   disabled={project.demoUrl === "#"}
                 >
                   <ExternalLink className="h-4 w-4 mr-2" />
-                  Demo
-                </Button>
-                <Button 
-                  size="sm" 
-                  variant="outline" 
-                  className="flex-1"
-                  onClick={() => project.githubUrl !== "#" && window.open(project.githubUrl, '_blank')}
-                  disabled={project.githubUrl === "#"}
-                >
-                  <Github className="h-4 w-4 mr-2" />
-                  Code
+                  {project.demoUrl === "coming-soon" ? "Coming Soon" : "Demo"}
                 </Button>
               </div>
             </div>
