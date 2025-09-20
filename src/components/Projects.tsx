@@ -16,7 +16,7 @@ const Projects = () => {
         "Built with Electron for cross-platform compatibility"
       ],
       techStack: ["Electron", "Python", "Flask", "SQLite", "DQNs", "HDBScan"],
-      status: "Beta Release August 2025",
+      status: "Beta Release September 2025",
       featured: true,
       demoUrl: "#",
       githubUrl: "#"
@@ -142,11 +142,23 @@ const Projects = () => {
 
               {/* Actions */}
               <div className="flex gap-3 mt-auto">
-                <Button size="sm" variant="outline" className="flex-1">
+                <Button 
+                  size="sm" 
+                  variant="outline" 
+                  className="flex-1"
+                  onClick={() => project.demoUrl !== "#" && window.open(project.demoUrl, '_blank')}
+                  disabled={project.demoUrl === "#"}
+                >
                   <ExternalLink className="h-4 w-4 mr-2" />
                   Demo
                 </Button>
-                <Button size="sm" variant="outline" className="flex-1">
+                <Button 
+                  size="sm" 
+                  variant="outline" 
+                  className="flex-1"
+                  onClick={() => project.githubUrl !== "#" && window.open(project.githubUrl, '_blank')}
+                  disabled={project.githubUrl === "#"}
+                >
                   <Github className="h-4 w-4 mr-2" />
                   Code
                 </Button>

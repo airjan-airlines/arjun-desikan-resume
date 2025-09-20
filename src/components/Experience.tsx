@@ -9,10 +9,10 @@ const Experience = () => {
       period: "Summer 2025",
       location: "Cambridge, MA",
       type: "Research",
-      description: "Lead bioinformatics research on tumor gene expression analysis",
+      description: "Lead bioinformatics research quantifying the effects of SCNA burden on tumor gene expression and dimensionality",
       achievements: [
         "First Author publication in Harvard Journal",
-        "Collaborated with world-renowned researchers including Gregory A. Petsko",
+        "Learned from world-renowned researchers of the caliber of Gregory A. Petsko",
         "Developed novel approaches to gene expression analysis",
         "Presented findings to research community"
       ],
