@@ -42,8 +42,8 @@ const Experience = () => {
       institution: "Seven Lakes High School",
       degree: "High School Diploma",
       period: "Class of 2026",
-      gpa: "4.75 Weighted GPA",
-      achievements: ["1560 SAT Score", "National Merit Scholar Candidate"]
+      gpa: "4.76 Weighted GPA",
+      achievements: ["1560 SAT Score"]
     },
     {
       id: 2,

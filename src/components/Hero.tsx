@@ -96,22 +96,14 @@ const Hero = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 glass-card p-6 max-w-2xl mx-auto">
+        <div className="grid grid-cols-2 gap-4 glass-card p-6 max-w-lg mx-auto">
           <div className="text-center">
-            <div className="text-2xl font-bold text-primary">4.75</div>
+            <div className="text-2xl font-bold text-primary">4.76</div>
             <div className="text-sm text-muted-foreground">GPA</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-primary">1560</div>
             <div className="text-sm text-muted-foreground">SAT Score</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-primary">3+</div>
-            <div className="text-sm text-muted-foreground">Major Projects</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-primary">1st</div>
-            <div className="text-sm text-muted-foreground">State Champion</div>
           </div>
         </div>
       </div>
